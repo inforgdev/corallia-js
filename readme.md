@@ -5,8 +5,8 @@
 CoralliaJS is a design system token compiler, currently for LessCSS, SCSS and Stylus.
 
 * Minified;
-* Support modern preprocessors: currenly LessCSS, SCSS and Stylus.
-* Support variables
+* Support modern preprocessors: currenly LessCSS, SCSS and Stylus;
+* Support variables.
 
 ## Installation
 
