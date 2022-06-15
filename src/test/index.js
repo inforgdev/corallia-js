@@ -1,0 +1,30 @@
+import { langs, compileFile } from "../../dist/corallia.js";
+
+import tokens from "./tokens/index.js";
+var scss = langs.scss;
+
+const fakeLang = {
+    extname: 'fake',
+    grammar: {
+        var: {
+            def: "$$__NAME: __VALUE",
+            usage: "$$__NAME",
+            nameCase: "_"
+        }
+    }
+}
+
+compileFile({
+    in: {
+        data: tokens,
+    },
+    process: {
+        minify: false,
+        grammar: scss.grammar,
+    },
+    out: {
+        basedir: "./src/test/dist/",
+        filename: "test",
+        extname: scss.extname
+    },
+});
