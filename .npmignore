@@ -2,5 +2,6 @@
 node_modules
 rollup.config.js
 license.md
+README.md
 src
 .vscode
