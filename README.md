@@ -85,7 +85,7 @@ Working in progress.
 
 ## License
 
-[Click here to see the license.](./license.md)
+[Click here to see the license.](./LICENSE.md)
 
 ## Support
 
