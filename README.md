@@ -52,7 +52,7 @@ corallia.compileFile({
 
 Output (*./src/example/dist/example.scss*):
 
-```less
+```scss
 $color-white: #fff;
 $color-black: #000;
 $color-gray-1: #1a1a1a;
