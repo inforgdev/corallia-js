@@ -18,7 +18,7 @@ compileFile({
     in: {
         data: tokens,
     },
-    process: {
+    proc: {
         minify: false,
         grammar: scss.grammar,
     },
