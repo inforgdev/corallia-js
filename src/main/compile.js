@@ -6,8 +6,8 @@ var grammar = {
     }
 }
 
-export default function compile(propObj, processOptions) {
-    var options = processOptions;
+export default function compile(propObj, procOptions) {
+    var options = procOptions;
     var templ = options.grammar;
     var data = "";
 
