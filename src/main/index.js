@@ -1,11 +1,11 @@
 import langs from "./langs";
 import utils from "./utils";
-import compile from "./compile";
-import compileFile from "./compileFile";
+import stringify from "./stringify";
+import stringifyFile from "./stringifyFile";
 
 export {
     langs,
     utils,
-    compile,
-    compileFile
+    stringify,
+    stringifyFile
 };

@@ -6,7 +6,7 @@ var grammar = {
     }
 }
 
-export default function compile(propObj, procOptions) {
+export default function stringify(propObj, procOptions) {
     var options = procOptions;
     var templ = options.grammar;
     var data = "";
