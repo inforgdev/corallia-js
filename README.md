@@ -43,9 +43,11 @@ corallia.stringifyFile({
         grammar: scss.grammar,
     },
     out: {
-        dirname: "./src/example/dist/",
-        filename: "example",
-        extname: scss.extname
+        file: {
+            dirname: "./src/example/dist/",
+            name: "example",
+            extname: scss.extname
+        }
     },
 });
 ```
