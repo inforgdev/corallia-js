@@ -1,6 +1,9 @@
 function dist(outOptions) {
-    if(!outOptions.dirname.endsWith("/")) outOptions.dirname = outOptions.dirname + "/";
-    return outOptions.dirname + outOptions.filename + "." + outOptions.extname;
+    let dirname = outOptions.dirname;
+    let extname = outOptions.extname;
+    let filename = outOptions.filename;
+    if (!extname.startsWith(".")) extname = `.${extname}`;
+    return path.join(dirname, filename).concat(`${extname}`);
 }
 
 export default {
