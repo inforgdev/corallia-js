@@ -1,6 +1,6 @@
 {
   "name": "corallia-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "design system token stringifier, currently for less, scss and stylus.",
   "main": "dist/corallia.js",
   "type": "module",
