@@ -2,7 +2,7 @@
 
 ## About
 
-CoralliaJS is a design system token compiler, currently for LessCSS, SCSS and Stylus.
+CoralliaJS is a design system token stringifier, currently for LessCSS, SCSS and Stylus.
 
 * Minified;
 * Support modern preprocessors: currenly LessCSS, SCSS and Stylus;
@@ -34,7 +34,7 @@ const tokens = {
 
 const scss = corallia.langs.scss;
 
-corallia.compileFile({
+corallia.stringifyFile({
     in: {
         data: tokens,
     },
