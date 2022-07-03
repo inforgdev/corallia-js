@@ -5,7 +5,7 @@
 CoralliaJS is a design system token stringifier, currently for LessCSS, SCSS and Stylus.
 
 * Minified;
-* Support modern preprocessors: currenly LessCSS, SCSS and Stylus;
+* Support modern preprocessors: currently LessCSS, SCSS and Stylus;
 * Support variables.
 
 ## Example
