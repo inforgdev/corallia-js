@@ -23,8 +23,10 @@ stringifyFile({
         grammar: scss.grammar,
     },
     out: {
-        dirname: "./src/test/dist/",
-        filename: "test",
-        extname: scss.extname
+        file: {
+            dirname: "./src/test/dist/",
+            name: "test",
+            extname: scss.extname
+        }
     },
 });
