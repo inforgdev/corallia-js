@@ -23,7 +23,7 @@ strigifyFile({
         grammar: scss.grammar,
     },
     out: {
-        basedir: "./src/test/dist/",
+        dirname: "./src/test/dist/",
         filename: "test",
         extname: scss.extname
     },
