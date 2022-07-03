@@ -1,4 +1,4 @@
-import { langs, strigifyFile } from "../../dist/corallia.js";
+import { langs, stringifyFile } from "../../dist/corallia.js";
 
 import tokens from "./tokens/index.js";
 var scss = langs.scss;
@@ -14,7 +14,7 @@ const fakeLang = {
     }
 }
 
-strigifyFile({
+stringifyFile({
     in: {
         data: tokens,
     },
