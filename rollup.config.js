@@ -8,6 +8,7 @@ export default {
   },
   external: [
     'fs',
+    'path',
   ],
   plugins: [
     nodeResolve(),
