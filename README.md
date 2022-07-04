@@ -29,7 +29,7 @@ const tokens = {
             "7": "#b2b2b2",
         },
         "primary": "$color-white",
-    }
+    },
 };
 
 const scss = corallia.langs.scss;
@@ -46,8 +46,8 @@ corallia({
         file: {
             dirname: "./src/example/dist/",
             name: "example",
-            extname: scss.extname
-        }
+            extname: scss.extname,
+        },
     },
 });
 ```

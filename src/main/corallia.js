@@ -8,4 +8,4 @@ export default function corallia(options) {
     }
 
     if(options.out.file !== undefined) stringifyFile(options);
-}
+};

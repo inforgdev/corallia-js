@@ -5,5 +5,5 @@ import styl from "./styl.js";
 export default {
     scss,
     less,
-    styl
+    styl,
 };

@@ -5,6 +5,6 @@ export default {
             def: "@__NAME: __VALUE;",
             usage: "@__NAME",
             nameCase: "-",
-        }
-    }
+        },
+    },
 };

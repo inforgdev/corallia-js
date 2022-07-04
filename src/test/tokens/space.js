@@ -7,4 +7,4 @@ export default {
     "xl": "24px",
     "xxl": "32px",
     "xxxl": "48px",
-}
+};

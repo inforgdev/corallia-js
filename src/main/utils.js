@@ -9,5 +9,5 @@ function dist(outOptions) {
 }
 
 export default {
-    dist
-}
+    dist,
+};

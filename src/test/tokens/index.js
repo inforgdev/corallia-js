@@ -3,5 +3,5 @@ import space from "./space.js";
 
 export default {
     color,
-    space
-}
+    space,
+};
