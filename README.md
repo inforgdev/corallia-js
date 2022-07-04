@@ -34,7 +34,7 @@ const tokens = {
 
 const scss = corallia.langs.scss;
 
-corallia.stringifyFile({
+corallia({
     in: {
         data: tokens,
     },
