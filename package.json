@@ -6,7 +6,6 @@
   "type": "module",
   "scripts": {
     "main:compile": "rollup --config rollup.config.js",
-    "main:watch": "echo \"Error: no main:compile specified\" && exit 1",
     "test:compile": "rollup --config rollup.config.js"
   },
   "keywords": [
