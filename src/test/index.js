@@ -4,7 +4,7 @@ import tokens from "./tokens/index.js";
 var scss = langs.scss;
 
 const fakeLang = {
-    extname: 'fake',
+    extname: "fake",
     grammar: {
         var: {
             def: "$$__NAME: __VALUE",

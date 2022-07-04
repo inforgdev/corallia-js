@@ -78,7 +78,7 @@ npm install --save-dev inforgdev/corallia-js
 For usage using ESM, import it in JS file:
 
 ```js
-import 'corallia-js';
+import "corallia-js";
 ```
 
 ## Documentation
