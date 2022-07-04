@@ -9,10 +9,10 @@ const fakeLang = {
         var: {
             def: "$$__NAME: __VALUE",
             usage: "$$__NAME",
-            nameCase: "_"
-        }
-    }
-}
+            nameCase: "_",
+        },
+    },
+};
 
 corallia({
     in: {
@@ -26,7 +26,7 @@ corallia({
         file: {
             dirname: "./src/test/dist/",
             name: "test",
-            extname: scss.extname
+            extname: scss.extname,
         },
         print: true,
     },

@@ -2,9 +2,9 @@ var grammar = {
     var: {
         name: "__NAME",
         value: "__VALUE",
-        pointer: "$"
-    }
-}
+        pointer: "$",
+    },
+};
 
 export default function stringify(propObj, procOptions) {
     var options = procOptions;
@@ -43,7 +43,7 @@ export default function stringify(propObj, procOptions) {
 
             var propEntry = {
                 name: newParent,
-                value: propValue
+                value: propValue,
             };
 
             var line = defineVar(propEntry, templ);
@@ -59,4 +59,4 @@ export default function stringify(propObj, procOptions) {
     concatData(templ, propObj);
 
     return data;
-}
+};

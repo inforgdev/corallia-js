@@ -9,5 +9,5 @@ export {
     langs,
     utils,
     stringify,
-    stringifyFile
+    stringifyFile,
 };

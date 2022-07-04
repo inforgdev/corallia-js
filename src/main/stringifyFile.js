@@ -5,8 +5,8 @@ import utils from "./utils.js";
 export default function stringifyFile(options) {
     var fileData = stringify(
         options.in.data,
-        options.proc
+        options.proc,
     );
     var fileDist = utils.dist(options.out);
     writeFileSync(fileDist, fileData);
-}
+};

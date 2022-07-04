@@ -4,7 +4,7 @@ import { terser } from "rollup-plugin-terser";
 export default {
     input: "./src/main/index.js",
     output: {
-        file: "./dist/corallia.js"
+        file: "./dist/corallia.js",
     },
     external: [
         "fs",
@@ -12,6 +12,6 @@ export default {
     ],
     plugins: [
         nodeResolve(),
-        terser()
+        terser(),
     ]
 };
