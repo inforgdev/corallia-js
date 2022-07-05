@@ -71,7 +71,7 @@ $color-primary: $color-white;
 
 Download and install via NPM from Github repository:
 
-```sh
+```bash
 npm install --save-dev inforgdev/corallia-js
 ```
 
