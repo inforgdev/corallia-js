@@ -1,12 +1,12 @@
 {
   "name": "corallia-js",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "design system token stringifier, currently for less, scss and stylus.",
   "main": "dist/corallia.js",
   "type": "module",
   "scripts": {
     "main:compile": "rollup --config rollup.config.js",
-    "test:compile": "rollup --config rollup.config.js"
+    "example:compile": "node src/example/index.js"
   },
   "keywords": [
     "design-system",
