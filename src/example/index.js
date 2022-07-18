@@ -24,7 +24,7 @@ corallia({
     },
     out: {
         file: {
-            dirname: "./src/example/dist/",
+            dirname: "./src/example/dest/",
             name: "example",
             extname: scss.extname,
         },
