@@ -10,8 +10,7 @@ let coralliaGrammar = {
     },
 };
 
-function defineVar(propEntry, options) {
-    const octopoLang = options.data;
+function defineVar(propEntry, octopoLang) {
     const propName = propEntry.name;
     let propValue = propEntry.value;
     
@@ -23,9 +22,7 @@ function defineVar(propEntry, options) {
     return _var(propName, _val(propValue));
 }
 
-export default function octopize(propObj, procOptions) {
-    const options = procOptions;
-    const octopoLang = options.data;
+export default function octopize(propObj, octopoLang) {
     const data = [];
 
     function concatData(octopoLang, propObj, parent) {
@@ -45,11 +42,10 @@ export default function octopize(propObj, procOptions) {
                 name: newParent,
                 value: propValue,
             };
-            const curVar = defineVar(propEntry, { data: octopoLang });
+            
+            const curVar = defineVar(propEntry, octopoLang);
             data.push(curVar);
         };
-
-        return data;
     }
 
     concatData(octopoLang, propObj);

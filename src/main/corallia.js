@@ -1,11 +1,11 @@
-import stringify from "./stringify.js";
-import stringifyFile from "./stringifyFile.js";
+import octopo from "octopo-js";
+import octopize from "./octopize.js";
 
 export default function corallia(options) {
-    if(options.out.print) {
-        let rootC = stringify(options.in.data, options.proc);
-        console.log(rootC);
-    }
-
-    if(options.out.file !== undefined) stringifyFile(options);
+    const coralliaTokens = options.in.data;
+    const octopoTokens = octopize(coralliaTokens, options.proc.grammar);
+    options.in.grammar = options.proc.grammar;
+    options.in.data = octopoTokens;
+    
+    octopo(options);
 };

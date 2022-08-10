@@ -1,12 +1,12 @@
-import { writeFileSync } from "fs";
 import stringify from "./stringify.js";
-import utils from "./utils.js";
+import { stringifyFile as octopoStringify } from "octopo-js";
 
 export default function stringifyFile(options) {
-    var fileData = stringify(
-        options.in.data,
-        options.proc,
-    );
-    var fileDist = utils.dist(options.out);
-    writeFileSync(fileDist, fileData);
+    const coralliaTokens = options.in.data;
+    const octopoTokens = stringify(coralliaTokens, {
+        data: options.in.grammar,
+    });
+    options.in.data = octopoTokens;
+    
+    octopoStringify(options);
 };
