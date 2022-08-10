@@ -1,18 +1,8 @@
-import { langs, corallia } from "../../dist/corallia.js";
+import { langs } from "octopo-js";
+import corallia from "../main/corallia.js";
 
 import tokens from "./tokens/index.js";
-var scss = langs.scss;
-
-const fakeLang = {
-    extname: "fake",
-    grammar: {
-        var: {
-            def: "$$__NAME: __VALUE",
-            usage: "$$__NAME",
-            nameCase: "_",
-        },
-    },
-};
+var lang = langs.scss;
 
 corallia({
     in: {
@@ -20,13 +10,13 @@ corallia({
     },
     proc: {
         minify: false,
-        grammar: scss.grammar,
+        grammar: lang,
     },
     out: {
         file: {
             dirname: "./src/example/dest/",
             name: "example",
-            extname: scss.extname,
+            extname: lang.extname,
         },
         print: true,
     },
