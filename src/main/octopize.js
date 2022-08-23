@@ -2,13 +2,7 @@ import { factory, stringify } from "octopo-js";
 const { _var, _val, _ref } = factory;
 const { $ref } = stringify;
 
-let coralliaGrammar = {
-    var: {
-        name: "__NAME",
-        value: "__VALUE",
-        pointer: "$",
-    },
-};
+import coralliaGrammar from "./grammar.js";
 
 function defineVar(propEntry, octopoLang) {
     const propName = propEntry.name;
