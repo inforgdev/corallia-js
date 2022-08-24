@@ -2,7 +2,7 @@
 
 ## About
 
-CoralliaJS is a design system token stringifier for CSS preprocessor languages powered by OctopoJS.
+CoralliaJS is a CSS preprocessor agnostic design system token stringifier.
 
 * Minified;
 * Support modern preprocessors: currently LessCSS, SCSS and Stylus;
