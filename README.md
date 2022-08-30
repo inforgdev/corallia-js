@@ -2,10 +2,10 @@
 
 ## About
 
-CoralliaJS is a CSS preprocessor agnostic design system token stringifier.
+CoralliaJS is a OctopoJS AST generator for design system tokens.
 
 * Minified;
-* Support modern preprocessors: currently LessCSS, SCSS and Stylus;
+* Powered by OctopoJS;
 * Support variables.
 
 ## Example
