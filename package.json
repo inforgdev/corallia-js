@@ -22,11 +22,9 @@
   "author": "inforgdev",
   "license": "SEE LICENSE IN LICENSE.md",
   "devDependencies": {
+    "octopo-js": "github:inforgdev/octopo-js",
     "rollup": "^2.75.6",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^7.0.2"
-  },
-  "dependencies": {
-    "octopo-js": "github:inforgdev/octopo-js"
   }
 }
