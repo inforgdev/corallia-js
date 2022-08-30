@@ -13,8 +13,10 @@ CoralliaJS is a CSS preprocessor agnostic design system token stringifier.
 Input (*example.js*):
 
 ```js
-import corallia from "corallia-js";
+import { coralliaProc } from "corallia-js";
+import { langs } from "octopo-js";
 
+const lang = langs.scss;
 const tokens = {
     color: {
         "white": "#fff",
@@ -23,48 +25,50 @@ const tokens = {
             "1": "#1a1a1a",
             "2": "#333333",
             "3": "#4d4d4d",
-            "4": "#666666",
-            "5": "#808080",
-            "6": "#999999",
-            "7": "#b2b2b2",
         },
         "primary": "$color-white",
     },
 };
 
-const scss = corallia.langs.scss;
-
-corallia({
-    in: {
-        data: tokens,
-    },
-    proc: {
-        minify: false,
-        grammar: scss.grammar,
-    },
-    out: {
-        file: {
-            dirname: "./src/example/dist/",
-            name: "example",
-            extname: scss.extname,
-        },
-    },
-});
+const output = coralliaProc(tokens, { grammar: lang });
+console.log(output);
 ```
 
-Output (*./src/example/dist/example.scss*):
+Output (*Console*):
 
 ```scss
-$color-white: #fff;
-$color-black: #000;
-$color-gray-1: #1a1a1a;
-$color-gray-2: #333333;
-$color-gray-3: #4d4d4d;
-$color-gray-4: #666666;
-$color-gray-5: #808080;
-$color-gray-6: #999999;
-$color-gray-7: #b2b2b2;
-$color-primary: $color-white;
+[
+  {
+    type: 'v',
+    name: 'color-white',
+    expression: { type: 'val', expression: '#fff' }
+  },
+  {
+    type: 'v',
+    name: 'color-black',
+    expression: { type: 'val', expression: '#000' }
+  },
+  {
+    type: 'v',
+    name: 'color-gray-1',
+    expression: { type: 'val', expression: '#1a1a1a' }
+  },
+  {
+    type: 'v',
+    name: 'color-gray-2',
+    expression: { type: 'val', expression: '#333333' }
+  },
+  {
+    type: 'v',
+    name: 'color-gray-3',
+    expression: { type: 'val', expression: '#4d4d4d' }
+  },
+  {
+    type: 'v',
+    name: 'color-primary',
+    expression: { type: 'val', expression: '$color-white' }
+  }
+]
 ```
 
 ## Installation
