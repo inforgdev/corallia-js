@@ -1,6 +1,6 @@
 {
   "name": "corallia-js",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Design system token stringifier for CSS preprocessor languages powered by OctopoJS.",
   "main": "dist/corallia.js",
   "type": "module",

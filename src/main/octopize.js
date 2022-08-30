@@ -1,6 +1,6 @@
-import { factory, stringify } from "octopo-js";
+import { factory, stringifier } from "octopo-js";
 const { _var, _val, _ref } = factory;
-const { $ref } = stringify;
+const { $ref } = stringifier;
 
 import coralliaGrammar from "./grammar.js";
 
