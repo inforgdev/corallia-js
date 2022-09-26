@@ -2,7 +2,17 @@
   "name": "corallia-js",
   "version": "0.2.2",
   "description": "OctopoJS AST generator for design system tokens.",
-  "main": "dist/corallia.js",
+  "main": "./dist/corallia.cjs",
+  "module": "./dist/corallia.js",
+  "exports": {
+    ".": {
+      "require": "./dist/corallia.cjs",
+      "import": "./dist/corallia.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "scripts": {
     "main:compile": "rollup --config rollup.config.js",
