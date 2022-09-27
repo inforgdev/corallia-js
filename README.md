@@ -38,7 +38,7 @@ console.log(output);
 
 Output (*Console*):
 
-```scss
+```js
 [
   {
     type: 'v',
