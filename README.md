@@ -1,5 +1,7 @@
 # CoralliaJS
 
+<a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/Contributing-CONTRIBUTING.md-005c99?style=flat&amp;logo=" alt="Contributing"/></a> <a href="LICENSE.md"><img src="https://img.shields.io/badge/License-LICENSE.md-005c99?style=flat&amp;logo=" alt="License"/></a> <a href="README.md"><img src="https://img.shields.io/badge/Documentation-WIP-993d00?style=flat&amp;logo=" alt="License"/></a>
+
 ## About
 
 CoralliaJS is a OctopoJS AST generator for design system tokens.
@@ -85,18 +87,6 @@ For usage using ESM, import it in JS file:
 import "corallia-js";
 ```
 
-## Documentation
-
-Working in progress.
-
 ## Support
 
 If there is some question, contact us via e-mail or any social media.
-
-## Contributing
-
-[Click here to see the contributing file.](./CONTRIBUTING.md)
-
-## License
-
-[Click here to see the license.](./LICENSE.md)
