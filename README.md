@@ -75,7 +75,7 @@ Output (*Console*):
 
 ## Installation
 
-Download and install via NPM from Github repository:
+Download and install via NPM from GitHub repository:
 
 ```bash
 npm install --save-dev inforgdev/corallia-js
