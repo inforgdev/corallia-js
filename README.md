@@ -1,6 +1,6 @@
 # CoralliaJS
 
-<a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/Contributing-CONTRIBUTING.md-005c99?style=flat&amp;logo=" alt="Contributing"/></a> <a href="LICENSE.md"><img src="https://img.shields.io/badge/License-LICENSE.md-005c99?style=flat&amp;logo=" alt="License"/></a> <a href="README.md"><img src="https://img.shields.io/badge/Documentation-WIP-993d00?style=flat&amp;logo=" alt="License"/></a>
+<a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/Contributing-CONTRIBUTING.md-005c99?style=flat&amp;logo=" alt="Contributing"/></a> <a href="LICENSE.md"><img src="https://img.shields.io/badge/License-LICENSE.md-005c99?style=flat&amp;logo=" alt="License"/></a> <a href="README.md"><img src="https://img.shields.io/badge/Documentation-WIP-993d00?style=flat&amp;logo=" alt="Documentation"/></a>
 
 ## About
 
