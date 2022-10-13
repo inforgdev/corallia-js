@@ -1,5 +1,5 @@
-import octopize from "./octopize.js";
+import octopizeTokens from "./octopizeTokens.js";
 
 export default function coralliaProc(data, meta) {
-    return octopize(data, meta.grammar);
+    return octopizeTokens(data, meta.grammar);
 }

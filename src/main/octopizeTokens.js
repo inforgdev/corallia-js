@@ -17,7 +17,7 @@ function defineVar(token, octopoLang) {
     return _var(propName, _val(propValue));
 }
 
-export default function octopize(propObj, octopoLang) {
+export default function octopizeTokens(propObj, octopoLang) {
     const data = [];
 
     tokens(propObj, (token) => {
