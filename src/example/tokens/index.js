@@ -1,7 +1,7 @@
 import color from "./color.js";
 import space from "./space.js";
 
-export default {
+export {
     color,
-    space,
+    space
 };
