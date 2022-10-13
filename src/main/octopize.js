@@ -1,12 +1,13 @@
 import { factory, stringifier } from "octopo-js";
+import { tokens } from "./tokens.js";
+import coralliaGrammar from "./grammar.js";
+
 const { _var, _val, _ref } = factory;
 const { $ref } = stringifier;
 
-import coralliaGrammar from "./grammar.js";
-
-function defineVar(propEntry, octopoLang) {
-    const propName = propEntry.name;
-    let propValue = propEntry.value;
+function defineVar(token, octopoLang) {
+    const propName = token.name;
+    let propValue = token.value;
     
     if(propValue.startsWith(coralliaGrammar.var.pointer)) {
         const varName = propValue.substring(1, propValue.length);
@@ -19,30 +20,10 @@ function defineVar(propEntry, octopoLang) {
 export default function octopize(propObj, octopoLang) {
     const data = [];
 
-    function concatData(octopoLang, propObj, parent) {
-        for(var propName in propObj) {
-            var propValue = propObj[propName];
-            
-            const newParent = parent == undefined ?
-                propName :
-                parent + octopoLang.wordSep + propName;
-            
-            if(propValue instanceof Object) {
-                concatData(octopoLang, propValue, newParent);
-                continue;
-            }
-
-            const propEntry = {
-                name: newParent,
-                value: propValue,
-            };
-            
-            const curVar = defineVar(propEntry, octopoLang);
-            data.push(curVar);
-        };
-    }
-
-    concatData(octopoLang, propObj);
+    tokens(propObj, (token) => {
+        const curVar = defineVar(token, octopoLang);
+        data.push(curVar);
+    });
 
     return data;
 };
