@@ -15,8 +15,8 @@
   ],
   "type": "module",
   "scripts": {
-    "main:compile": "rollup --config rollup.config.js",
-    "example:compile": "node src/example/index.js"
+    "main:build": "rollup --config rollup.config.js",
+    "example:build": "node src/example/index.js"
   },
   "keywords": [
     "design-system",
