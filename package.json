@@ -1,6 +1,6 @@
 {
   "name": "corallia-js",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "OctopoJS AST generator for design system tokens.",
   "main": "./dist/corallia.cjs",
   "module": "./dist/corallia.js",

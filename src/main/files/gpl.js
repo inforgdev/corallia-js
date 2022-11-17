@@ -1,5 +1,6 @@
 import hexRgb from 'hex-rgb';
 import { tokens } from "../tokens.js";
+import { renderTokens } from "../renderTokens.js";
 
 const stdTmpl = {
     tokenName: "__NAME (__VALUE)",
@@ -12,13 +13,18 @@ Name: ${name}
 `;
     let colors = [];
 
-    tokens(propObj, ({ name, value }) => {
+    const json = {};
+    tokens(propObj, ({ name, value }) => json[name] = value);
+    const tokensRender = renderTokens(json);
+
+    Object.keys(tokensRender).forEach((k) => {
+        const value = tokensRender[k];
         let rgb = hexRgb(value);
         if(rgb === null) return;
 
         const token = {
             name: tmpl.tokenName
-                .replaceAll("__NAME", name)
+                .replaceAll("__NAME", k)
                 .replaceAll("__VALUE", value),
             rgb: rgb.red + " " + rgb.green + " " + rgb.blue
         }
