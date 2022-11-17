@@ -1,9 +1,9 @@
 import { tokens } from "./tokens.js";
-import coralliaProc from "./coralliaProc.js";
+import { octopizeTokens } from "./octopizeTokens.js";
 import { genGpl } from "./files/gpl.js";
 
 export {
     tokens,
-    coralliaProc,
+    octopizeTokens,
     genGpl,
 };
