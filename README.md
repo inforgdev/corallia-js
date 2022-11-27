@@ -6,9 +6,11 @@
 
 CoralliaJS is a OctopoJS AST generator for design system tokens.
 
-* Minified;
-* Powered by OctopoJS;
-* Support variables.
+## Features
+
+* 🖌️ **Generate CSS preprocessors files** - powered by OctopoJS;
+* 🖼️ **Inkscape and GIMP support** - exports to `.gpl` file;
+* ☐ **Support variables** - reuses declared tokens.
 
 ## Example
 
