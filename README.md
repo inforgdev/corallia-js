@@ -15,7 +15,7 @@ CoralliaJS is a OctopoJS AST generator for design system tokens.
 Input (*example.js*):
 
 ```js
-import { coralliaProc } from "corallia-js";
+import { octopizeTokens } from "corallia-js";
 import { langs } from "octopo-js";
 
 const lang = langs.scss;
@@ -32,7 +32,7 @@ const tokens = {
     },
 };
 
-const output = coralliaProc(tokens, { grammar: lang });
+const output = octopizeTokens(tokens, lang);
 console.log(output);
 ```
 
