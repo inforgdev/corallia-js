@@ -1,8 +1,8 @@
 import { langs } from "octopo-js";
-import coralliaProc from "../main/coralliaProc.js";
+import { octopizeTokens } from "../main/octopizeTokens.js";
 
 import * as tokens from "./tokens/index.js";
 var lang = langs.scss;
 
-const output = coralliaProc(tokens, { grammar: lang });
+const output = octopizeTokens(tokens, lang);
 console.log(output);
