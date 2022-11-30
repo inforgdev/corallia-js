@@ -1,9 +1,6 @@
-import { factory, stringifier } from "octopo-js";
+import { generate, _ref, _val, _var } from "octopo-js";
 import { tokens } from "./tokens.js";
 import coralliaGrammar from "./grammar.js";
-
-const { _var, _val, _ref } = factory;
-const { $ref } = stringifier;
 
 function defineVar(token, octopoLang) {
     const propName = token.name;
@@ -11,7 +8,7 @@ function defineVar(token, octopoLang) {
     
     if(propValue.startsWith(coralliaGrammar.var.pointer)) {
         const varName = propValue.substring(1, propValue.length);
-        propValue = $ref(_ref(varName), octopoLang)
+        propValue = generate(_ref(varName), octopoLang)
     }
 
     return _var(propName, _val(propValue));
