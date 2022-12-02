@@ -43,32 +43,32 @@ Output (*Console*):
 ```js
 [
   {
-    type: 'v',
+    type: 'var',
     name: 'color-white',
     expression: { type: 'val', expression: '#fff' }
   },
   {
-    type: 'v',
+    type: 'var',
     name: 'color-black',
     expression: { type: 'val', expression: '#000' }
   },
   {
-    type: 'v',
+    type: 'var',
     name: 'color-gray-1',
     expression: { type: 'val', expression: '#1a1a1a' }
   },
   {
-    type: 'v',
+    type: 'var',
     name: 'color-gray-2',
     expression: { type: 'val', expression: '#333333' }
   },
   {
-    type: 'v',
+    type: 'var',
     name: 'color-gray-3',
     expression: { type: 'val', expression: '#4d4d4d' }
   },
   {
-    type: 'v',
+    type: 'var',
     name: 'color-primary',
     expression: { type: 'val', expression: '$color-white' }
   }
