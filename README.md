@@ -4,7 +4,7 @@
 
 ## About
 
-CoralliaJS is a OctopoJS AST generator for design system tokens.
+CoralliaJS is a toolkit for generating design system tokens.
 
 ## Features
 
