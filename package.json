@@ -16,7 +16,9 @@
   "type": "module",
   "scripts": {
     "main:build": "rollup --config rollup.config.js",
-    "example:start": "node src/example/index.js"
+    "example:start": "node src/example/index.js",
+    "docs:dev": "vitepress dev ./docs/",
+    "docs:build": "vitepress build ./docs/"
   },
   "keywords": [
     "design-system",
@@ -34,7 +36,8 @@
   "devDependencies": {
     "rollup": "^2.75.6",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "vitepress": "^1.0.0-alpha.40"
   },
   "dependencies": {
     "hex-rgb": "^5.0.0",
