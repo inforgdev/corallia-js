@@ -16,7 +16,6 @@
   "type": "module",
   "scripts": {
     "main:build": "rollup --config rollup.config.js",
-    "example:start": "node src/example/index.js",
     "docs:dev": "vitepress dev ./docs/",
     "docs:build": "vitepress build ./docs/"
   },
